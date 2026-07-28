@@ -39,18 +39,15 @@ for(let table = 2; table <= 10; table++){
 //Exercize 5
 console.log("Truthiness Audit with Array:\n");
 
-// Step 1: Saari values ko array me daal do
 let values = [0, "", " ", "0", null, undefined, NaN, {}, [], "false", -1];
 
-// Step 2: Saare naam alag array me
 let names = ['0', '""', '" "', '"0"', 'null', 'undefined', 'NaN', '{}', '[]', '"false"', '(-1)'];
 
-// Step 3: Loop chalao aur ek ek karke check karo
 for(let i = 0; i < values.length; i++) {
 
-  if(values[i]) { // agar ye value truthy hai
+  if(values[i]) { 
     console.log(`${names[i]} --> truthy`);
-  } else { // agar ye value falsy hai
+  } else { 
     console.log(`${names[i]} --> falsy`);
   }
 }
@@ -84,7 +81,7 @@ for(let i = 0; i < values.length; i++) {
 
 //Exercize 6
 console.log("Print all the prime numbers from 2 to 50.\n")
-for(let num = 2;num < 50; num++){
+for(let num = 2;num <= 50; num++){
     let prime = true;
 
 for(let i = 2; i < num; i++){

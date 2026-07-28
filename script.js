@@ -23,8 +23,8 @@ let totalage=0;
 let output='';
 
 for(const temp of arr){
-    if(temp.age<25)continue;
     totalage += temp.age;
+    if(temp.age<25)continue;
     output += `${temp.name} is ${temp.age} years old.\n`;
 }
 console.log(`Total age: ${totalage}`);
